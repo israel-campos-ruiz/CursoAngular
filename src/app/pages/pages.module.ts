@@ -4,17 +4,20 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { GraficOneComponent } from './grafic-one/grafic-one.component';
-
+import {FormsModule} from '@angular/forms'
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
     ProgressComponent,
-    GraficOneComponent
+    GraficOneComponent,
+    IncrementadorComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     PAGESROUTES
   ],
   exports:[
