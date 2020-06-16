@@ -1,23 +1,4 @@
-/*
-Template Name: Admin Pro Admin
-Author: Wrappixel
-Email: niravjoshi87@gmail.com
-File: scss
-*/
-/*
-Template Name: Admin Pro Admin
-Author: Wrappixel
-Email: niravjoshi87@gmail.com
-File: scss
-*/
-/*Theme Colors*/
-/*bootstrap Color*/
-/*Light colors*/
-/*Normal Color*/
-/*Extra Variable*/
-/*******************
-/*Top bar
-*******************/
+
 .topbar {
   background: #ef5350; }
   .topbar .navbar-header {
@@ -33,9 +14,7 @@ File: scss
 .hdr-nav-bar .navbar .navbar-nav > li.active > a {
   border-color: #f62d51; }
 
-/*******************
-/*General Elements
-*******************/
+
 .lstick {
   background: #f62d51; }
 
@@ -72,9 +51,6 @@ a.link:hover, a.link:focus {
 .customtab li a.nav-link:hover {
   color: #f62d51; }
 
-/*******************
-/*Buttons
-*******************/
 .btn-themecolor,
 .btn-themecolor.disabled {
   background: #f62d51;
@@ -90,9 +66,7 @@ a.link:hover, a.link:focus {
   .btn-themecolor.disabled:focus {
     background: #028ee1; }
 
-/*******************
-/*sidebar navigation
-*******************/
+
 .label-themecolor {
   background: #f62d51; }
 

@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
 
 //RUTAS//
 import { AppRoutingModule } from './app-routing.module';
 
 //MODULOS//
 import { PagesModule } from './pages/pages.module';
-import { SharedModule } from './shared/shared.module';
+
 
 
 import { PagesComponent } from './pages/pages.component';
@@ -18,7 +19,8 @@ import { RegisterComponent } from './login/register.component';
 
 
 //Temporales
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -31,9 +33,11 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     PagesModule,
-    SharedModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    ReactiveFormsModule,
+    HttpClientModule
    
     
   ],
