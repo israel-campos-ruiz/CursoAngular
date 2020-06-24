@@ -5,7 +5,13 @@ import { ProgressComponent } from './progress/progress.component';
 import { GraficOneComponent } from './grafic-one/grafic-one.component';
 import { SettingsComponent } from './settings/settings.component';
 import { LoginGuard } from '../services/guards/login.guard';
+import { ProfileComponent } from './profile/profile.component';
 
+
+//============================MantenimientosSideBar===============================
+import { UsuariosComponent } from './usuarios/usuarios.component';
+
+//============================End MantenimientosSideBar===========================
 
 const pagesRoutes: Routes = [
       { path: '', component: PagesComponent, 
@@ -15,6 +21,10 @@ const pagesRoutes: Routes = [
         { path: 'account-settings', component: SettingsComponent },
         { path: 'progress', component: ProgressComponent },
         { path: 'graficas1', component: GraficOneComponent },
+        { path: 'perfil', component: ProfileComponent },
+  //============================MantenimientosSideBar==============================
+        { path: 'usuarios', component: UsuariosComponent },
+   //===========================End MantenimientosSideBar==========================      
         { path: '', redirectTo : '/dashboard', pathMatch: 'full' },
 
       ]

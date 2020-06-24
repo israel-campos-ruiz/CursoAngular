@@ -19,19 +19,16 @@ export class SettingsService {
   }
 
   saveThemeInLocalStorage(){
-    console.log("guardando en el localStorage");    
+     
     localStorage.setItem('ajustes', JSON.stringify(this.ajustes))
   }
 
   getThemeFromLocalStorage(){
     if(localStorage.getItem('ajustes')){
       this.ajustes = JSON.parse(localStorage.getItem('ajustes'));
-      console.log("cargando del storage");
-     this.applyTheme(this.ajustes.tema)
-      
+     this.applyTheme(this.ajustes.tema) 
     }else{
-      console.log("usando valores por defecto");
-      
+
     }
   }
 

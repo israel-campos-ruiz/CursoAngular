@@ -77,7 +77,7 @@ auth2:any;
   
     this._usuarioService.login(usuario, forma.value.recuerdame).subscribe((res:any) =>{
       console.log(res);
-       this.router.navigate(['/dashboard'])
+       window.location.href = '/dashboard';
     });
   
   }
